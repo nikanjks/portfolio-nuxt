@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+    themes: false;
+}
+
+@plugin "daisyui/theme" {
+    name: "portfolio";
+    default: true;
+    prefersdark: true;
+    color-scheme: dark;
+
+    --color-base-100: #2e3f4a;
+    --color-base-200: #3c5260;
+    --color-base-300: #536b78;
+    --color-base-content: #cee5f2;
+
+    --color-primary: #accbe1;
+    --color-primary-content: #1f2d36;
+    --color-secondary: #7c98b3;
+    --color-secondary-content: #1f2d36;
+    --color-accent: #cee5f2;
+    --color-accent-content: #1f2d36;
+    --color-neutral: #536b78;
+    --color-neutral-content: #cee5f2;
+
+    --color-info: #7cc4e8;
+    --color-info-content: #10242e;
+    --color-success: #8fd3a8;
+    --color-success-content: #10241a;
+    --color-warning: #e8c46c;
+    --color-warning-content: #2a2108;
+    --color-error: #e88a8a;
+    --color-error-content: #2e1010;
+
+    --radius-box: 0.75rem;
+    --radius-field: 0.5rem;
+    --radius-selector: 0.5rem;
+}
+
+@theme {
+    --color-frontend: #c96c4a;
+    --color-language: #c7a33c;
+    --color-database: #b58edb;
+    --color-devtool: #e8a7c8;
+
+    --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+
+    @keyframes fade-up {
+        from {
+            opacity: 0;
+            transform: translateY(24px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+}
