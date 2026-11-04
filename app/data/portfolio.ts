@@ -46,11 +46,11 @@ export const stack: StackItem[] = [
     { name: 'Python', logo: '/logos/languages/icons8-python.svg', category: 'language'},
     { name: 'MySQL', logo: '/logos/languages/mysql-svgrepo-com.svg', category: 'database'},
     { name: 'MongoDB', logo: '/logos/languages/mongodb-svgrepo-com.svg', category: 'database'},
-    { name: 'Git', logo: '/logos/devtools/git-svgrepo-com.svg', category: 'devtool'},
-    { name: 'VS Code', logo: '/logos/devtools/icons8-visual-studio-code-2019.svg', category: 'devtool'},
-    { name: 'Github', logo: '/logos/devtools/github-142-svgrepo-com.svg', category: 'devtool'},
-    { name: 'Maven', logo: '/logos/devtools/maven-svgrepo-com.svg', category: 'devtool'},
-    { name: 'Kotlin', logo: '/logos/languages/kotlin-svgrepo-com.svg', category: 'language'},
+    { name: 'VS Code', logo: '/logos/tools/icons8-visual-studio-code-2019.svg', category: 'devtool' },
+    { name: 'Git', logo: '/logos/tools/git-svgrepo-com.svg', category: 'devtool' },
+    { name: 'GitHub', logo: '/logos/tools/github-142-svgrepo-com.svg', category: 'devtool' },
+    { name: 'Maven', logo: '/logos/tools/maven-svgrepo-com.svg', category: 'devtool' },
+    { name: 'Kotlin', logo: '/logos/tools/kotlin-svgrepo-com.svg', category: 'devtool' },
 ]
 
 // Certifications
@@ -59,6 +59,13 @@ export interface Certification {
     issuer: string
     image: string
     verifyUrl?: string
+}
+
+export const certification: Certification = {
+  title: 'Microsoft Office Specialist',
+  issuer: 'Microsoft',
+  image: '/certifications/Microsoft-Office-Specialist-Certificate-Danica-Louisse-Talusik.png',
+  verifyUrl: 'https://www.certiport.com/portal/pages/credentialverification.aspx',
 }
 
 export const completions: Certification[] = [
