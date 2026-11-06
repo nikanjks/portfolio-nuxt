@@ -12,17 +12,27 @@ watch(
 </script>
 
 <template>
-  <div class="drawer lg:drawer-open">
-    <input id="app-drawer" ref="drawerToggle" type="checkbox" class="drawer-toggle" aria-label="Toggle sidebar menu" />
+  <div class="relative">
+    <AppBackground />
 
-    <div class="drawer-content flex min-h-screen flex-col">
-      <AppNavbar />
-      <main class="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8">
-        <slot />
-      </main>
-      <AppFooter />
+    <div class="drawer relative z-10 lg:drawer-open">
+      <input
+        id="app-drawer"
+        ref="drawerToggle"
+        type="checkbox"
+        class="drawer-toggle"
+        aria-label="Toggle sidebar menu"
+      />
+
+      <div class="drawer-content flex min-h-screen flex-col">
+        <AppNavbar />
+        <main class="mx-auto w-full max-w-5xl flex-1 px-4 py-10 sm:px-8">
+          <slot />
+        </main>
+        <AppFooter />
+      </div>
+
+      <AppSidebar />
     </div>
-
-    <AppSidebar />
   </div>
 </template>

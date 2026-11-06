@@ -19,7 +19,7 @@ const contacts = [
 
 <template>
   <div>
-    <PageHeader label="Let's connect" title="Get in" highlight="Touch" />
+    <PageHeader label="Let's connect" title="Get in Touch" />
 
     <div class="grid gap-4 sm:grid-cols-2">
       <a

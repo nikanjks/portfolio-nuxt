@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PhArrowRight } from '@phosphor-icons/vue'
+import { PhSignIn } from '@phosphor-icons/vue'
 import { owner } from '~/data/portfolio'
 
 useHead({ title: 'Home' })
@@ -21,10 +21,12 @@ useSeoMeta({
             <img src="/portrait/profile-picture.jpeg.jpeg" :alt="`Portrait of ${owner.name}`" />
           </div>
         </div>
-        <h1 class="text-3xl font-bold tracking-tight">{{ owner.name }}</h1>
-        <p class="text-base-content/80">{{ owner.tagline }}</p>
+        <h1 class="whitespace-nowrap text-xl font-bold tracking-tight sm:text-2xl lg:text-3xl">
+          {{ owner.name }}
+        </h1>
+        <p class="text-lg text-base-content/80">{{ owner.tagline }}</p>
         <NuxtLink to="/about" class="btn btn-primary mt-2">
-          <PhArrowRight :size="18" /> Get to know me
+          <PhSignIn :size="20" /> Get to Know Me
         </NuxtLink>
       </div>
     </ContentCard>

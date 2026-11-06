@@ -13,10 +13,10 @@ useSeoMeta({
 
 <template>
   <div>
-    <PageHeader label="What I work with" title="Tech" highlight="Stack" />
+    <PageHeader label="What I work with" title="Tech Stack" />
 
     <!-- Legend -->
-    <ul class="mb-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+    <ul class="mx-auto mb-10 flex w-fit flex-wrap justify-center gap-x-6 gap-y-2 pb-10 text-sm">
       <li v-for="(cat, key) in categories" :key="key" class="flex items-center gap-2">
         <span class="size-2.5 rounded-sm" :class="cat.dot"></span>
         {{ cat.label }}

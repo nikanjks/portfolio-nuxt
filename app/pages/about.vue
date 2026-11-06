@@ -13,7 +13,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <PageHeader label="Get to know me" title="About" highlight="Me" />
+    <PageHeader label="Get to know me" title="About Me" />
 
     <div class="flex flex-col gap-6">
       <ContentCard>

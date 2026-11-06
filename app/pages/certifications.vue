@@ -15,14 +15,14 @@ useSeoMeta({
 <template>
   <div class="flex flex-col gap-14">
     <section>
-      <PageHeader label="Credentials" title="My" highlight="Certifications" />
+      <PageHeader label="Credentials" title="My Certifications" />
       <div class="grid gap-6 sm:grid-cols-2">
         <CertificationCard :cert="certification" />
       </div>
     </section>
 
     <section>
-      <PageHeader label="Credentials" title="My" highlight="Certificates of Completion" />
+      <PageHeader label="Credentials" title="My Certificates of Completion" />
       <div class="grid gap-6 sm:grid-cols-2">
         <CertificationCard
           v-for="(cert, i) in completions"
